@@ -1,0 +1,9 @@
+<div class="container">
+  <div id="product" *ngFor="let product of products">
+    <img [src]="product.image" [alt]="product.name">
+    <hr>
+    <h2>{{product.name}}</h2>
+  </div>
+</div>
+
+

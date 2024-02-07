@@ -1,0 +1,756 @@
+
+<!DOCTYPE html>
+<html>
+
+
+
+<head>
+<!-- Yandex.RTB -->
+<script>window.yaContextCb=window.yaContextCb||[]</script>
+<script src="https://yandex.ru/ads/system/context.js" async></script>
+
+<meta name="verify-admitad" content="7dd00c7f79" />
+
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-8273469192869221",
+        enable_page_level_ads: true
+      });
+    </script>
+
+    <title>Интерактивный учебник языка Python</title>
+    <link rel="shortcut icon" type="image/png" href="/static/favicon.png?9dff416"/>
+
+
+    
+	
+    <script type="text/javascript" src="/static/js/jquery.min.js?9dff416"></script>
+    <script type="text/javascript" src="/static/bootstrap/js/bootstrap.min.js?9dff416"></script>
+
+    <script type="text/javascript" src="/static/js/ace-editor/ace.js?9dff416"></script>
+    <script type="text/javascript" src="/static/js/jquery.jsPlumb-1.6.4-min.js?9dff416"></script>
+    <script type="text/javascript" src="/static/js/pythontutor.js?9dff416"></script>
+    <script type="text/javascript" src="/static/js/visualizer.js?9dff416"></script>
+    <script type="text/javascript" src="/static/js/visualizer-page.js?9dff416"></script>
+
+    <script type="text/javascript" src="/static/js/brython/brython.js?9dff416"></script>
+    <script type="text/python3" src="/static/js/checker.py?9dff416"></script>
+    <script>
+$(function() {
+    brython({debug: 1});
+});
+    </script>
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      messageStyle: "none"
+    });
+    </script>
+    <script type="text/javascript"
+      src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script type="text/javascript" src="/static/js/handlebars-v4.0.5.js?9dff416"></script>
+
+    <link rel="stylesheet" type="text/css" href="/static/bootstrap/css/bootstrap.min.css?9dff416">
+    <link rel="stylesheet" type="text/css" href="/static/font-awesome/css/font-awesome.min.css?9dff416">
+    <link rel="stylesheet" type="text/css" href="/static/css/pythontutor.css?9dff416">
+    <link rel="stylesheet" type="text/css" href="/static/css/visualizer.css?9dff416">
+    <link rel="stylesheet" type="text/css" href="/static/css/profile.css?9dff416">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- VK Like Button -->
+    <script type="text/javascript" src="//vk.com/js/api/openapi.js?115"></script>
+    <script type="text/javascript">
+      VK.init({apiId: 4657603, onlyWidgets: true});
+    </script>
+    <!-- /VK Like Button -->
+
+    <script type="text/javascript">
+    window.pythontutor = {
+      user: 'hello@world'
+    };
+
+    // Set up ID for anonymous user.
+    if (!localStorage.getItem('anonymousUserID')) {
+      localStorage.setItem('anonymousUserID', Math.random().toString(36).replace(/[^a-z]+/g, ''));
+    }
+    </script>
+
+	<link rel="stylesheet" type="text/css" href="/static/css/lesson.css?9dff416">
+	<link rel="stylesheet" type="text/css" href="/static/css/problem.css?9dff416">
+	<link rel="stylesheet" type="text/css" href="/static/css/pythontutor-sidebar.css?9dff416">
+
+	<script type="text/javascript" src="/static/js/lesson.js?9dff416"></script>
+
+	<script type="text/javascript">
+		window.lesson_id = '2';
+	</script>
+
+
+
+    <script type="text/javascript" src="/static/js/problem.js?9dff416"></script>
+
+    <script type="text/javascript">
+        var problem_name = 'knight_move';
+        var problem_id = '97';
+    </script>
+
+
+</head>
+<body>
+  
+    <nav class="navbar-light navbar-full bg-faded navbar-fixed-top">
+	<div class="container collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+          <a class="navbar-brand" href="/">Питонтьютор</a>
+          <ul class="nav navbar-nav">
+           <!-- <li class="nav-item">
+          <a class="nav-link" style="color: black;" target="_blank" onclick='ga && ga("send", "event", "Pride", "Clicked"); return true;' href="https://vk.com/@alisa_neverova-vyzhit-i-zhit-dolgo-i-schastlivo">🌈</a>
+            </li> -->
+<!--
+            <li class="nav-item">
+              <a class="nav-link" href="https://vk.com/pythontutor" style="color: #305075;"><i class="fa fa-vk" aria-hidden="true" style="margin-right: 3px;"></i>Новости</a>
+            </li>
+    
+-->
+        <li class="nav-item">
+              <a class="nav-link" href="https://snakify.org/" style="color: red">En</a>
+            </li>
+<!--
+            <li class="nav-item">
+              <a class="nav-link" href="https://github.com/vpavlenko/web-2020">Веб-программирование</a>
+            </li>          
+<li class="nav-item">
+<a class="nav-link" target="_blank"  href="https://bit.ly/school-slon-via-pythontutor" style="color:#003f5c;"><img src="/static/slon_gradient_24px.png" style="height:24px;padding-right:6px;padding-bottom:6px;">Школа Слон | 7-11 классы | 2-9 января</a>
+</li>
+-->
+
+<!--
+<li class="nav-item">
+<a class="nav-link" target="_blank"  href="https://bit.ly/school-slon-summer-2022-pythontutor" style="color:#003f5c;"><img src="/static/slon_gradient_24px.png" style="height:24px;padding-right:6px;padding-bottom:6px;">Школа Слон | 7–11 классы | 13–29 июля</a>
+</li>
+-->
+<!--
+<li class="nav-item">
+<a class="nav-link" target="_blank"  href="https://bit.ly/slon-2023" style="color:#003f5c;"><img src="/static/slon_gradient_24px.png" style="height:24px;padding-right:6px;padding-bottom:6px;">Школа Слон | 7–11 классы | 17 июля — 1 августа</a>
+</li>
+-->
+
+<li class="nav-item"><a class="nav-link" target="_blank"  href="https://github.com/vpavlenko/study-music" style="color:darkgrey;">Музыка</a>               
+
+</li>        
+
+<li class="nav-item"><a class="nav-link" target="_blank"  href="https://pyteach.vercel.app/edit" style="color:black;">Учителям</a>               
+
+</ul>
+          <div class="nav navbar-nav pull-xs-right">
+            <div class="nav-link">
+              
+                <span class="fa fa-user"></span> <a href="/profile/hello@world/">hello world</a>.
+                <a href="/accounts/logout/?next=/lessons/ifelse/problems/knight_move/">Выйти</a>
+              
+            </div>
+          </div>
+      </div>
+      <button
+        class="navbar-toggler hidden-sm-up"
+        type="button"
+        data-toggle="collapse"
+        data-target="#exCollapsingNavbar2"
+        aria-controls="exCollapsingNavbar2"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+       &#9776;
+     </button>
+    </nav>
+  
+
+	<div class="container-fluid">
+		
+	<div class="row">
+		<div class="col-lg-2 col-md-2 col-sm-1 col-xs-1 sidebar">
+			
+				<ul class="nav nav-sidebar hidden-xs hidden-sm">
+					
+						<li class="lesson ">
+							<a href="/lessons/inout_and_arithmetic_operations/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">1.</div>
+									<div class="lesson__item_title">Ввод и вывод данных</div>
+								</div>
+							</a>
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/ifelse/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">2.</div>
+									<div class="lesson__item_title">Условия</div>
+								</div>
+							</a>
+							
+								
+    <ul class="lesson_sections">
+        <li class="problems_link">
+            <a>Задачи</a>
+            <ul>
+                
+                    <li class="solved problem-available"><a href="/lessons/ifelse/problems/minimum/">Минимум из двух чисел</a></li>
+                
+                    <li class="solved problem-available"><a href="/lessons/ifelse/problems/signum/">Знак числа</a></li>
+                
+                    <li class="solved problem-available"><a href="/lessons/ifelse/problems/chess_board/">Шахматная доска</a></li>
+                
+                    <li class="solved problem-available"><a href="/lessons/ifelse/problems/leap_year/">Високосный год</a></li>
+                
+                    <li class="solved problem-available"><a href="/lessons/ifelse/problems/minimum3/">Минимум из трех чисел</a></li>
+                
+                    <li class="solved problem-available"><a href="/lessons/ifelse/problems/num_equal/">Сколько совпадает чисел</a></li>
+                
+                    <li class="solved problem-available"><a href="/lessons/ifelse/problems/rook_move/">Ход ладьи</a></li>
+                
+                    <li class="solved problem-available"><a href="/lessons/ifelse/problems/king_move/">Ход короля</a></li>
+                
+                    <li class="solved problem-available"><a href="/lessons/ifelse/problems/bishop_move/">Ход слона</a></li>
+                
+                    <li class="solved problem-available"><a href="/lessons/ifelse/problems/queen_move/">Ход ферзя</a></li>
+                
+                    <li class=" problem-available"><a class="active" href="/lessons/ifelse/problems/knight_move/">Ход коня</a></li>
+                
+                    <li class=" problem-available"><a href="/lessons/ifelse/problems/chocolate/">Шоколадка</a></li>
+                
+                    <li class=" problem-available"><a href="/lessons/ifelse/problems/jacob_the_swimmer/">Яша плавает в бассейне</a></li>
+                
+            </ul>
+        </li>
+    </ul>
+
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/int_and_float/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">3.</div>
+									<div class="lesson__item_title">Вычисления</div>
+								</div>
+							</a>
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/for_loop/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">4.</div>
+									<div class="lesson__item_title">Цикл for</div>
+								</div>
+							</a>
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/str/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">5.</div>
+									<div class="lesson__item_title">Строки</div>
+								</div>
+							</a>
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/while/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">6.</div>
+									<div class="lesson__item_title">Цикл while</div>
+								</div>
+							</a>
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/lists/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">7.</div>
+									<div class="lesson__item_title">Списки</div>
+								</div>
+							</a>
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/functions/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">8.</div>
+									<div class="lesson__item_title">Функции и рекурсия</div>
+								</div>
+							</a>
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/2d_arrays/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">9.</div>
+									<div class="lesson__item_title">Двумерные массивы</div>
+								</div>
+							</a>
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/sets/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">10.</div>
+									<div class="lesson__item_title">Множества</div>
+								</div>
+							</a>
+							
+						</li>
+					
+						<li class="lesson ">
+							<a href="/lessons/dicts/">
+								<div class="lesson__item">
+									<div class="lesson__item_id">11.</div>
+									<div class="lesson__item_title">Словари</div>
+								</div>
+							</a>
+							
+						</li>
+					
+				</ul>
+			
+<div style="margin: 20px 0 20px 0;">
+<!-- Yandex.RTB R-A-248092-6 -->
+<div id="yandex_rtb_R-A-248092-6"></div>
+<script>window.yaContextCb.push(()=>{
+  Ya.Context.AdvManager.render({
+    renderTo: 'yandex_rtb_R-A-248092-6',
+    blockId: 'R-A-248092-6'
+  })
+})</script>
+</div>
+
+
+
+<!-- Yandex.RTB R-A-248092-7 -->
+<div id="yandex_rtb_R-A-248092-7"></div>
+<script>window.yaContextCb.push(()=>{
+  Ya.Context.AdvManager.render({
+    renderTo: 'yandex_rtb_R-A-248092-7',
+    blockId: 'R-A-248092-7'
+  })
+})</script>
+
+
+
+
+		</div>
+		<div class="col-lg-7 col-md-6 col-lg-offset-2 col-md-offset-2 col-sm-11 col-sm-offset-1 col-xs-offset-1 main">
+			
+				
+<div class="row">
+    <div class="col-lg-10">
+
+<div style="margin: 0 0 20px 0;">
+	<!-- Yandex.RTB R-A-248092-5 -->
+<div id="yandex_rtb_R-A-248092-5"></div>
+<script>window.yaContextCb.push(()=>{
+  Ya.Context.AdvManager.render({
+    renderTo: 'yandex_rtb_R-A-248092-5',
+    blockId: 'R-A-248092-5'
+  })
+})</script>
+</div>
+
+        <h3 class="lesson_name"><button class="sidebar-toggle btn btn-secondary" style="padding: 2px 10px; margin-right: 10px; margin-bottom: 5px;"><i class="fa fa-angle-left fa-1x" aria-hidden="true"></i></button><a href="/lessons/ifelse/">Занятие 2</a>. Условия</h3>
+        <h3 class="problem_name">Задача &laquo;Ход коня&raquo;</h3>
+        <hr>
+
+        <h4><small>Условие</small></h4>
+        <p>Шахматный конь ходит буквой &ldquo;Г&rdquo;&nbsp;&mdash; на две клетки по вертикали в любом направлении и на одну клетку по горизонтали, или наоборот. Даны две различные клетки шахматной доски, определите, может ли конь попасть с первой клетки на вторую одним ходом.</p>
+
+        <hr>
+        <p style="color: gray; font-size: small;">Во всех задачах считывайте входные данные через <code>input()</code> и выводите ответ через <code>print()</code>.
+        <p>
+
+        <hr>
+    </div>
+</div>
+
+    <div id="visualizer"></div>
+
+    <div class="submit_solution">
+        
+        <button class="btn btn-primary btn-lg submit_solution__client-submit">Проверить решение на всех тестах</button>
+        <br>
+        <br>
+        <button class="btn btn-sm btn-default submit_solution__server-submit">Проверить на сервере (долго)</button>
+        <div style="height: 1em;">&nbsp;</div>
+        <div class="status_solved" style="display: none;"></div>
+        <div class="status_error" style="color: darkred; display: none;"><b>Неправильное решение.
+        <br>
+        На одном из тестов ниже программа неправильно работает</b></div>
+        
+    </div>
+
+    <div id="other_solutions"></div>
+
+    <h4 style="padding-top: 10px;"><small>Тесты</small></h4>
+    <table id="example_tests" class="table table-condensed">
+        <thead>
+            <th class="debug_me"></th>
+            <th>Входные данные</th>
+            <th>Правильный ответ</th>
+            <th class="test_output">Что вывела программа</th>
+            <th class="test_result">Результат</th>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td class="debug_me"><button class="btn btn-secondary">Запустить тест 1</button></td>
+                <td><pre class="input">1
+1
+1
+4</pre></td>
+                <td><pre class="output">NO</pre></td>
+                <td class="test_output"></td>
+                <td class="test_result"></td>
+            </tr>
+            
+            <tr>
+                <td class="debug_me"><button class="btn btn-secondary">Запустить тест 2</button></td>
+                <td><pre class="input">1
+1
+8
+8</pre></td>
+                <td><pre class="output">NO</pre></td>
+                <td class="test_output"></td>
+                <td class="test_result"></td>
+            </tr>
+            
+            <tr>
+                <td class="debug_me"><button class="btn btn-secondary">Запустить тест 3</button></td>
+                <td><pre class="input">2
+4
+3
+2</pre></td>
+                <td><pre class="output">YES</pre></td>
+                <td class="test_output"></td>
+                <td class="test_result"></td>
+            </tr>
+            
+            <tr>
+                <td class="debug_me"><button class="btn btn-secondary">Запустить тест 4</button></td>
+                <td><pre class="input">5
+2
+4
+4</pre></td>
+                <td><pre class="output">YES</pre></td>
+                <td class="test_output"></td>
+                <td class="test_result"></td>
+            </tr>
+            
+            <tr>
+                <td class="debug_me"><button class="btn btn-secondary">Запустить тест 5</button></td>
+                <td><pre class="input">2
+8
+3
+7</pre></td>
+                <td><pre class="output">NO</pre></td>
+                <td class="test_output"></td>
+                <td class="test_result"></td>
+            </tr>
+            
+            <tr>
+                <td class="debug_me"><button class="btn btn-secondary">Запустить тест 6</button></td>
+                <td><pre class="input">2
+8
+3
+5</pre></td>
+                <td><pre class="output">NO</pre></td>
+                <td class="test_output"></td>
+                <td class="test_result"></td>
+            </tr>
+            
+            <tr>
+                <td class="debug_me"><button class="btn btn-secondary">Запустить тест 7</button></td>
+                <td><pre class="input">5
+5
+3
+7</pre></td>
+                <td><pre class="output">NO</pre></td>
+                <td class="test_output"></td>
+                <td class="test_result"></td>
+            </tr>
+            
+            <tr>
+                <td class="debug_me"><button class="btn btn-secondary">Запустить тест 8</button></td>
+                <td><pre class="input">2
+4
+2
+5</pre></td>
+                <td><pre class="output">NO</pre></td>
+                <td class="test_output"></td>
+                <td class="test_result"></td>
+            </tr>
+            
+            <tr>
+                <td class="debug_me"><button class="btn btn-secondary">Запустить тест 9</button></td>
+                <td><pre class="input">4
+7
+6
+6</pre></td>
+                <td><pre class="output">YES</pre></td>
+                <td class="test_output"></td>
+                <td class="test_result"></td>
+            </tr>
+            
+            <tr>
+                <td class="debug_me"><button class="btn btn-secondary">Запустить тест 10</button></td>
+                <td><pre class="input">4
+5
+2
+4</pre></td>
+                <td><pre class="output">YES</pre></td>
+                <td class="test_output"></td>
+                <td class="test_result"></td>
+            </tr>
+            
+            <tr>
+                <td class="debug_me"><button class="btn btn-secondary">Запустить тест 11</button></td>
+                <td><pre class="input">2
+3
+3
+2</pre></td>
+                <td><pre class="output">NO</pre></td>
+                <td class="test_output"></td>
+                <td class="test_result"></td>
+            </tr>
+            
+            <tr>
+                <td class="debug_me"><button class="btn btn-secondary">Запустить тест 12</button></td>
+                <td><pre class="input">5
+1
+4
+3</pre></td>
+                <td><pre class="output">YES</pre></td>
+                <td class="test_output"></td>
+                <td class="test_result"></td>
+            </tr>
+            
+            <tr>
+                <td class="debug_me"><button class="btn btn-secondary">Запустить тест 13</button></td>
+                <td><pre class="input">6
+2
+8
+3</pre></td>
+                <td><pre class="output">YES</pre></td>
+                <td class="test_output"></td>
+                <td class="test_result"></td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+
+<div style="margin-top: 50px;">
+  <!-- Yandex.RTB R-A-248092-3 -->
+<div id="yandex_rtb_R-A-248092-3"></div>
+<script>window.yaContextCb.push(()=>{
+  Ya.Context.AdvManager.render({
+    renderTo: 'yandex_rtb_R-A-248092-3',
+    blockId: 'R-A-248092-3'
+  })
+})</script>
+</div>
+
+        <div style="margin-top: 50px;">
+<!-- Pythontutor Bottom Leaderboard -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:728px;height:90px"
+     data-ad-client="ca-pub-8273469192869221"
+     data-ad-slot="2072967526"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+        </div>
+
+
+
+				<div id='achievements-snack'></div>
+
+				
+                <div style="margin: 20px 0;">
+				<!-- Yandex.RTB R-A-248092-13 -->
+<div id="yandex_rtb_R-A-248092-13"></div>
+<script>window.yaContextCb.push(()=>{
+  Ya.Context.AdvManager.render({
+    renderTo: 'yandex_rtb_R-A-248092-13',
+    blockId: 'R-A-248092-13'
+  })
+})</script>
+</div>
+
+    
+			
+		</div>
+		<div class="hidden-sm hidden-xs" style="float: right; width: 300px; margin-top: 0px; margin-right: 20px;">
+
+
+
+
+
+<div style="margin: 0px 0px;">
+
+<!-- Yandex.RTB R-A-248092-2 -->
+<div id="yandex_rtb_R-A-248092-2"></div>
+<script>window.yaContextCb.push(()=>{
+  Ya.Context.AdvManager.render({
+    renderTo: 'yandex_rtb_R-A-248092-2',
+    blockId: 'R-A-248092-2'
+  })
+})</script>
+
+</div>
+
+
+
+
+<div style="margin: 30px 0px;">
+<!-- Yandex.RTB R-A-248092-1 -->
+<div id="yandex_rtb_R-A-248092-1"></div>
+<script>window.yaContextCb.push(()=>{
+  Ya.Context.AdvManager.render({
+    renderTo: 'yandex_rtb_R-A-248092-1',
+    blockId: 'R-A-248092-1'
+  })
+})</script>
+
+</div>
+
+
+
+<div style="margin: 10px 0px;">
+<!-- Yandex.RTB R-A-248092-4 -->
+<div id="yandex_rtb_R-A-248092-4"></div>
+<script>window.yaContextCb.push(()=>{
+  Ya.Context.AdvManager.render({
+    renderTo: 'yandex_rtb_R-A-248092-4',
+    blockId: 'R-A-248092-4'
+  })
+})</script>
+</div>
+      
+
+<div style="margin: 30px 0 0 0;"><b><a href="tg://resolve?domain=thingsiread">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" width="30" style="padding-right: 5px;">
+Телеграм-канал создателя Питонтьютора 🌈</a></b></div>
+
+
+</div></div>
+
+
+		
+			<footer>
+        Разработка и поддержка учебника: <a href="https://t.me/thingsiread">Виталий Павленко</a>, Владимир Соломатин (2014), команда Pythontutor (2016)
+        <br>
+				Автор первоначального текста большинства уроков, задач и тестов: Д. П. Кириенко (см. <a href="http://informatics.msk.ru/moodle/course/view.php?id=156">оригинальный курс</a>)
+				<br>
+				Идея учебника: В. М. Гуровиц
+				<br>
+				Разработчик визуализатора: <a href="http://www.pgbovine.net/">Philip Guo</a> (см. <a href="http://www.pythontutor.com">сайт визуализатора</a>)
+				<br>
+				Родилось в 2012
+				</p>
+
+				<div class="like-buttons">
+					<!-- VK Like Button -->
+					<div>
+						<div id="vk_like"></div>
+						<script type="text/javascript">
+						VK.Widgets.Like("vk_like", {type: "mini", height: 18});
+						</script>
+					</div>
+
+					<!-- Twitter Like Button -->
+					<div>
+						<a href="https://twitter.com/share" class="twitter-share-button" data-via="vitalypavlenko">Tweet</a>
+						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+					</div>
+
+					<!-- Facebook Like Button -->
+					<div>
+						<div id="fb-root"></div>
+						<script>(function(d, s, id) {
+						  var js, fjs = d.getElementsByTagName(s)[0];
+						  if (d.getElementById(id)) return;
+						  js = d.createElement(s); js.id = id;
+						  js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.0";
+						  fjs.parentNode.insertBefore(js, fjs);
+						}(document, 'script', 'facebook-jssdk'));</script>
+						<script>
+						    $(document).ready(function() {
+						        $('.fb-like').attr("data-href", document.URL);
+						    });
+						</script>
+						<div class="fb-like" data-href="http://pythontutor.ru/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+					</div>
+				</div>
+			</footer>
+		
+	</div>
+</body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    window.yaParams = {
+        login: 'hello@world'
+    };
+
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                window.yaCounter = w.yaCounter32952209 = new Ya.Metrika({
+                    id:32952209,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true,
+                    params:window.yaParams
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript>
+  <div>
+    <img src="https://mc.yandex.ru/watch/32952209" style="position:absolute; left:-9999px;" alt="" />
+  </div>
+</noscript>
+<!-- /Yandex.Metrika counter -->
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-69899403-1', 'auto');
+  ga('send', 'pageview');
+</script>
+<!-- /Google Analytics -->
+
+<script src='/static/js/bundle.js?9dff416'></script>
+</html>
